@@ -1,0 +1,9 @@
+name: amazon-competitor-radar
+display_name: 亚马逊竞品狙击手
+version: 0.1.0
+developer: buluslan
+brand: 新西楼.AI
+visibility: private
+github_owner: buluslan
+publish_tencent: false
+publish_xhs: false
