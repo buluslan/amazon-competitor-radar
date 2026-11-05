@@ -6,7 +6,7 @@ description: >-
   Trigger whenever the user mentions 竞品识别、找竞品、竞品是谁、谁在抢我的流量、流量重叠、跨形态竞品、对标哪个竞品、竞品狙击 — in any language；中文用户说「帮我看看我的对手都是谁 / 谁在跟我抢流量」时同样适用（即使没点名工具）。NOT for 已知对手的单个竞品深度拆解报告和评论深分析（有专门工具），也不做选品可行性判断。
 metadata:
   category: ecommerce/amazon
-  version: 0.1.0
+  version: 0.1.1
 license: MIT
 ---
 

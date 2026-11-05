@@ -12,7 +12,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-SKILL-blueviolet.svg)](https://docs.anthropic.com/en/docs/claude-code)
-[![Version](https://img.shields.io/badge/version-0.1.0-black.svg)]()
+[![Version](https://img.shields.io/badge/version-0.1.1-black.svg)]()
 
 **流量词反查 · 关键词重叠聚合 · 主图三分类 · 五维度打分 · 人工确认 · 打法总表**
 
@@ -27,6 +27,8 @@
 你输入一个 ASIN 和站点，Skill 会反查流量词并按关键词重叠聚合候选竞品（需接入可用的亚马逊数据源），先看主图区分同方案、跨方案和无关产品，再从价格带、人群场景、卖点结构、标题布局和发展阶段五个维度筛选对标对象——每一步都留给你确认和纠偏，最后输出一套带核心词清单、竞品名单和打法总表的分析结果，讲清谁值得学、学什么、什么不能照搬。
 
 这是 Agent 通用的指令集，可作为 Claude Code、Codex、Cursor 等 Agent 的工作指令使用；实际取数和读图能力由运行环境提供。Claude Code 是安装方式之一，不是唯一适用平台。
+
+**个人介绍主页：[mbgai.vip](https://mbgai.vip/)**
 
 ## ✨ 它做什么
 
@@ -46,12 +48,11 @@
 
 ### 安装到 Claude Code
 
-此仓库为私有仓库，克隆前需使用有访问权限的 GitHub 账号登录。以下方式需要已安装 GitHub CLI：
+本项目公开发布，可直接克隆，无需先申请仓库访问权限：
 
 ```bash
-gh auth status
 mkdir -p ~/.claude/skills
-gh repo clone buluslan/amazon-competitor-radar ~/.claude/skills/amazon-competitor-radar
+git clone https://github.com/buluslan/amazon-competitor-radar.git ~/.claude/skills/amazon-competitor-radar
 ```
 
 Codex、Cursor 等 Agent 用户可将 [SKILL.md](SKILL.md) 作为指令输入，同时提供同目录的 `references/` 文件；按各运行环境的技能加载方式安装即可。
@@ -133,7 +134,7 @@ python3 -m venv .venv
 
 ## 📜 License
 
-采用 [MIT License](LICENSE)，署名 **Buluu@新西楼.AI**。仓库可见性保持私有；MIT 是代码与文档的使用许可，不表示仓库已公开。
+采用 [MIT License](LICENSE)，署名 **Buluu@新西楼.AI**。
 
 ## 📖 写在最后
 

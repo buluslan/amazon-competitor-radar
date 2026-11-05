@@ -45,7 +45,7 @@ def validate(root):
     check(manifest.get("developer") == manifest.get("github_owner") == "buluslan",
           "Unexpected developer or repository owner")
     check(manifest.get("brand") == "新西楼.AI", "Unexpected brand")
-    check(manifest.get("visibility") == "private", "This release must remain private")
+    check(manifest.get("visibility") in {"private", "public"}, "Visibility must be private or public")
     check(manifest.get("publish_tencent") is False and manifest.get("publish_xhs") is False,
           "This release targets GitHub only")
     readme = (root / "README.md").read_text(encoding="utf-8")
